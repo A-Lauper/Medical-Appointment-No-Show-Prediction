@@ -21,18 +21,21 @@ This project tackles the problem of missed medical appointments, which disrupt c
 **Feature Engineering**: Created `days_between`, `day_of_week`, `past_missed`, `is_weekend`; standardized numerical features.
 
 ### Methods
-**Tools**: NumPy, pandas, scikit-learn, seaborn, matplotlib.  
+**Tools**: NumPy, pandas, scikit-learn, seaborn, matplotlib for data processing, modeling, and visualization.  
 **Models**: 
-- Supervised: Random Forest (ensemble, robust for imbalance), KNN (simple).  
+- Supervised: K-Nearest Neighbors; Random Forest. 
 - Unsupervised: K-means (clusters patients), Isolation Forest (detects outliers).  
 - Baselines: Majority-class (all show), median-based (random prediction).  
 
-**Justification**: Random Forest handles imbalanced data well; KNN is interpretable but less robust. K-means reveals patient patterns; Isolation Forest identifies high-risk outliers.  
-
-**Metrics**: Accuracy (correct predictions), RMSE (error size).  
+**Justification**: Random Forest handles imbalanced data well; KNN is interpretable but less robust. K-means reveals patient patterns; Isolation Forest identifies high-risk outliers.    
 
 ### Results
-Random Forest outperformed KNN and baselines, achieving higher accuracy and lower RMSE, better identifying no-shows. Past missed appointments and SMS reminders were key predictors, per permutation importance. K-means clustering revealed three patient groups with varying no-show rates. Anomalies detected by Isolation Forest had higher no-show likelihoods. Accuracy is skewed by imbalance; RMSE shows model fit. These results answer the research question by identifying at-risk patients.
+The majority baseline has high accuracy but fails to identify no-shows. The median baseline slightly improves no-show detection. KNN performs moderately, while Random Forest excels, better identifying high-risk patients. Key predictors include past missed appointments and SMS reminders (per permutation importance). K-means identifies a high-risk cluster; anomalies from Isolation Forest show elevated no-show rates. The results guide clinics in prioritizing interventions for high-risk patients.
+
+**Interpretation**:  
+- **Accuracy**: Measures overall correctness, less reliable due to imbalance. (True Positive + True Negative) divied by Total Sample  
+- **Precision**: Ensures efficient intervention targeting. (True Positive) divided by (True Positive + False Positive)  
+- **Recall**: Captures high-risk patients, critical for impact. (True Positive) divided by (True Positive + False Negative)
 
 ### Discussion
 The findings suggest clinics can use Random Forest to target high-risk patients, reducing no-shows and optimizing schedules. Past no-shows as a predictor align with behavioral studies, while SMS results indicate targeted reminders. Limitations include data imbalance and sparse Saturday records. Future work could involve tuning models or adding features (e.g., clinic distance). With more time, we may compare other features against each other instead of only no-shows; there could be more emphasis on numerical data rather than categorical.
