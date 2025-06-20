@@ -23,9 +23,9 @@ This project tackles the problem of missed medical appointments, which disrupt c
 ### Methods
 **Tools**: NumPy, pandas, scikit-learn, seaborn, matplotlib for data processing, modeling, and visualization.  
 **Models**: 
+- Baselines: Majority-class (all show), median-based (random prediction).  
 - Supervised: K-Nearest Neighbors; Random Forest. 
 - Unsupervised: K-means (clusters patients), Isolation Forest (detects outliers).  
-- Baselines: Majority-class (all show), median-based (random prediction).  
 
 **Justification**: Random Forest handles imbalanced data well; KNN is interpretable but less robust. K-means reveals patient patterns; Isolation Forest identifies high-risk outliers.    
 
