@@ -39,4 +39,4 @@ The findings suggest clinics can use Random Forest to target high-risk patients,
 
 ### Summary
 Random Forest excels at predicting no-shows, with past missed appointments and SMS reminders as top predictors. Clustering and anomaly detection highlight high-risk groups, enabling clinics to improve efficiency through targeted interventions.  
-As for what causes missed appointments, the answer is circular. We can only conclude that for demographics and medical factors, there is weak correlation with missed appointments.
+As for what causes missed appointments, the answer is circular. Missed appointments cause missed appointments, but what causes the missed appointments in the first place? We can only conclude that for demographics and medical factors, there is weak correlation with missed appointments.
