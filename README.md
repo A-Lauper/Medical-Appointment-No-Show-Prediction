@@ -30,7 +30,7 @@ This project tackles the problem of missed medical appointments, which disrupt c
 **Justification**: Random Forest handles imbalanced data well; KNN is interpretable but less robust. K-means reveals patient patterns; Isolation Forest identifies high-risk outliers.    
 
 ### Results
-The majority baseline has high accuracy but fails to identify no-shows. The median baseline slightly improves no-show detection. KNN performs moderately, while Random Forest excels, better identifying high-risk patients. Key predictors include past missed appointments and SMS reminders (per permutation importance). K-means identifies a high-risk cluster; anomalies from Isolation Forest show elevated no-show rates. The results guide clinics in prioritizing interventions for high-risk patients.
+The majority and median baseline has high accuracy but fails to identify no-shows. KNN performs moderately, while Random Forest excels, better identifying high-risk patients. Key predictors include past missed appointments and SMS reminders (per permutation importance). K-means identifies a high-risk cluster; anomalies from Isolation Forest show elevated no-show rates. The results guide clinics in prioritizing interventions for high-risk patients.
 
 **Interpretation**:  
 - **Accuracy**: Measures overall correctness, less reliable due to imbalance. (True Positive + True Negative) divied by Total Sample  
