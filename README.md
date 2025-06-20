@@ -35,7 +35,7 @@ This project tackles the problem of missed medical appointments, which disrupt c
 Random Forest outperformed KNN and baselines, achieving higher accuracy and lower RMSE, better identifying no-shows. Past missed appointments and SMS reminders were key predictors, per permutation importance. K-means clustering revealed three patient groups with varying no-show rates. Anomalies detected by Isolation Forest had higher no-show likelihoods. Accuracy is skewed by imbalance; RMSE shows model fit. These results answer the research question by identifying at-risk patients.
 
 ### Discussion
-The findings suggest clinics can use Random Forest to target high-risk patients, reducing no-shows and optimizing schedules. Past no-shows as a predictor align with behavioral studies, while SMS results indicate targeted reminders. Limitations include data imbalance and sparse Saturday records. Future work could involve tuning models or adding features (e.g., clinic distance). With more time, we’d explore class-weighted KNN and advanced clustering.
+The findings suggest clinics can use Random Forest to target high-risk patients, reducing no-shows and optimizing schedules. Past no-shows as a predictor align with behavioral studies, while SMS results indicate targeted reminders. Limitations include data imbalance and sparse Saturday records. Future work could involve tuning models or adding features (e.g., clinic distance). With more time, we may compare other features against each other instead of only no-shows.
 
 ### Summary
 Random Forest excels at predicting no-shows, with past missed appointments and SMS reminders as top predictors. Clustering and anomaly detection highlight high-risk groups, enabling clinics to improve efficiency through targeted interventions.  
