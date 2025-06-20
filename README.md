@@ -1,4 +1,4 @@
-# Medical-Appointment-No-Show-Prediction
+# Medical Appointment No-Show Prediction
 
 Final project for CST383: Introduction to Data Science, submitted by:
 - Arielle Lauper (alauper@csumb.edu)
