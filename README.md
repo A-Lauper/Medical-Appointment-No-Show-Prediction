@@ -6,6 +6,8 @@ Final project for CST383: Introduction to Data Science, submitted by:
 - Kelia Smith (kelismith@csumb.edu)
 - Maria Imperatrice (mimperatrice@csumb.edu)
 
+**Presentation Video Link**: https://drive.google.com/file/d/1Gw4fxL176nGfhDyLZWYB_bhxrAKD5d1I/view?usp=sharing
+
 ### Introduction 
 This project tackles the problem of missed medical appointments, which disrupt clinic operations and delay patient care. The research question is: can we predict if a patient will miss an appointment using demographic, medical, and scheduling data? The goal is to build a model to help clinics reduce no-shows, improving efficiency and resource use.
 
